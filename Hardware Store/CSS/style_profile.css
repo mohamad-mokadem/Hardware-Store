@@ -1,0 +1,226 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Profile Wrapper */
+.profile-wrapper {
+    width: 100%;
+    max-width: 700px;  /* Reduced width for smaller wrapper */
+    background-color: #fff;
+    padding: 2.5rem 2rem;  /* Adjusted padding */
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.profile-wrapper:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings */
+h1 {
+    font-size: 2.2rem;  /* Slightly smaller heading */
+    color: #4b7f2a; /* Green theme */
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    text-transform: capitalize;
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    font-size: 1.6rem;  /* Smaller subheading */
+    color: #333;
+    font-weight: 600;
+    margin-top: 1.8rem;
+    letter-spacing: 0.5px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #777;
+}
+
+/* Profile Information */
+.profile-info {
+    margin-bottom: 2rem;  /* Adjusted margin */
+}
+
+.profile-info p {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 12px 0;
+    line-height: 1.7;
+}
+
+.profile-info strong {
+    font-weight: 700;
+    color: #4b7f2a; /* Green accent */
+}
+
+/* Change Password Section */
+.change-password-section {
+    margin-top: 2rem; /* Add some space from previous content */
+}
+
+.change-password-section input {
+    margin-bottom: 1.5rem;  /* Space between input fields */
+}
+
+.change-password-section .btn {
+    margin-top: 1.5rem;  /* Add spacing above the button */
+}
+
+/* Input Fields */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.2rem;  /* Reduced bottom margin */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #4b7f2a; /* Green on focus */
+    box-shadow: 0 0 12px rgba(75, 127, 42, 0.2);
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: #4b7f2a; /* Green button */
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #3d6b1e;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+    outline: 2px solid #4b7f2a; /* Green outline on focus */
+    outline-offset: 4px;
+}
+
+/* Alert Box */
+.alert {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #4b7f2a; /* Green alert */
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* Profile Actions */
+.profile-actions {
+    margin-top: 2.5rem;  /* Adjusted margin */
+}
+
+.profile-actions .btn {
+    margin-right: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .profile-wrapper {
+        width: 85%;
+        padding: 2.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.8rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-wrapper {
+        padding: 2rem;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .btn {
+        padding: 0.9rem 2.2rem;
+        font-size: 1.1rem;
+    }
+
+    .profile-info p {
+        font-size: 1rem;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        padding: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-wrapper {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.75rem 1.8rem;
+    }
+}

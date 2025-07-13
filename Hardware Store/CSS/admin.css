@@ -1,0 +1,142 @@
+/* Resetting some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body and Main Layout */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: flex-start;
+    min-height: 100vh;
+    font-size: 16px;
+}
+
+.admin-container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #8EAB12; /* Green Theme */
+    width: 250px;
+    min-height: 100vh;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar-header h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.sidebar-nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar-nav li {
+    margin-bottom: 20px;
+}
+
+.sidebar-nav li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-nav li a:hover {
+    background-color: #6c9c0d; /* Darker shade on hover */
+}
+
+/* Main Content Area */
+.admin-main {
+    flex: 1;
+    background-color: #fff;
+    padding: 30px;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #8EAB12;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+header nav ul li a:hover {
+    color: #6c9c0d;
+}
+
+/* Main Content Section */
+.main-content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.main-content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+.main-content p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #8EAB12;
+}
+
+a:hover {
+    color: #6c9c0d;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .admin-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .admin-main {
+        padding: 15px;
+    }
+}

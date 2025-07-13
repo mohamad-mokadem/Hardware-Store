@@ -1,0 +1,131 @@
+/*By Mohammad Daoud*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(/Images/HardwareLogo-transformed.jpeg);
+    background-position: center;
+    background-size: cover; 
+    color: #222;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #222;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+h2 {
+    font-size: 1.5rem; 
+    color: #222;
+    margin: 1rem 0 0.5rem;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+.input-box label {
+    margin-bottom: 0.5rem;
+    display: block;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.input-box input:focus {
+    border-color: #8EAB12;
+    outline: none;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-image: linear-gradient(45deg, #8EAB12, #8eab18);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-image: linear-gradient(45deg, #8eab18, #8EAB12);
+}
+
+.login-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.login-link a {
+    color: #8EAB12;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+.anim {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+    background-color: #8EAB12;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+  
+.back-button:hover {
+    background-color: #8EAB12;
+    transform: scale(1.05);
+}
